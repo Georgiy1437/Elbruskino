@@ -1,0 +1,34 @@
+<script src="/js/movie.js"></script>
+
+
+<div class="container">
+  <h2>Film ID: {{filmId}}</h2>
+  <div class="cards">
+    <div>
+      <img alt="нет такой  картинки" class="img">
+    </div>
+    <div class="opisanie">
+      <div id="plot" class="info">
+        <h2>Описание:</h2>
+      </div>
+      <div id="length" class="info">
+        <h2>2</h2>
+      </div>
+      <div id="rating" class="info">
+        <h2>3</h2>
+      </div>
+      <div id="year" class="info">
+        <h2>4</h2>
+      </div>
+      <div>
+        <a id="video" href="">
+          <div id="video" class="info"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  fetchMovieData({{ filmId }})
+</script>
